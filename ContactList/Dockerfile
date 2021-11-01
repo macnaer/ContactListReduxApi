@@ -6,11 +6,10 @@ EXPOSE 80
 EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
-WORKDIR /src
 COPY . "ContactList/"
 RUN dotnet restore "ContactList/ContactList.csproj"
 COPY . .
-WORKDIR "/src/ContactList"
+WORKDIR "/app/ContactList"
 RUN dotnet build "ContactList.csproj" -c Release -o /app/build
 
 FROM build AS publish
