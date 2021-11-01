@@ -126,3 +126,4 @@ C:\Users\macnaer\Desktop\ContactList 09\ContactListReduxApi\ContactList\obj\Debu
 C:\Users\macnaer\Desktop\ContactList 09\ContactListReduxApi\ContactList\obj\Debug\net5.0\ref\ContactList.dll
 C:\Users\macnaer\Desktop\ContactList 09\ContactListReduxApi\ContactList\obj\Debug\net5.0\ContactList.pdb
 C:\Users\macnaer\Desktop\ContactList 09\ContactListReduxApi\ContactList\obj\Debug\net5.0\ContactList.genruntimeconfig.cache
+C:\Users\macnaer\Desktop\ContactList 09\ContactListReduxApi\ContactList\bin\Debug\net5.0\ClientApp\build\asset-manifest.json
