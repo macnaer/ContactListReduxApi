@@ -122,7 +122,6 @@ C:\Users\macnaer\Desktop\ContactList 09\ContactListReduxApi\ContactList\obj\Debu
 C:\Users\macnaer\Desktop\ContactList 09\ContactListReduxApi\ContactList\obj\Debug\net5.0\staticwebassets\ContactList.StaticWebAssets.xml
 C:\Users\macnaer\Desktop\ContactList 09\ContactListReduxApi\ContactList\obj\Debug\net5.0\scopedcss\bundle\ContactList.styles.css
 C:\Users\macnaer\Desktop\ContactList 09\ContactListReduxApi\ContactList\obj\Debug\net5.0\ContactList.RazorTargetAssemblyInfo.cache
-C:\Users\macnaer\Desktop\ContactList 09\ContactListReduxApi\ContactList\obj\Debug\net5.0\ContactList.csproj.CopyComplete
 C:\Users\macnaer\Desktop\ContactList 09\ContactListReduxApi\ContactList\obj\Debug\net5.0\ContactList.dll
 C:\Users\macnaer\Desktop\ContactList 09\ContactListReduxApi\ContactList\obj\Debug\net5.0\ref\ContactList.dll
 C:\Users\macnaer\Desktop\ContactList 09\ContactListReduxApi\ContactList\obj\Debug\net5.0\ContactList.pdb
