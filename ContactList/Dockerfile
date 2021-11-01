@@ -19,4 +19,8 @@ RUN dotnet publish "ContactList.csproj" -c Release -o /app/publish
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
+WORKDIR ClientApp
+RUN npm install && npm react-scripts build
+WORKDIR /app
+COPY ClientApp/build/. ClinetApp/build/
 ENTRYPOINT ["dotnet", "ContactList.dll"]
