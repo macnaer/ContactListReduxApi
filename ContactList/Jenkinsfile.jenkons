@@ -15,7 +15,7 @@ pipeline  {
             steps {
                 echo 'Creating docker image ...'
                 dir('.'){
-                    sh "docker build -t macnaer/chatterboxserver . "
+                    sh "docker build -t macnaer/secret-contact-list . "
                 }
             }
         }
@@ -33,7 +33,7 @@ pipeline  {
             steps {
                 echo " ============== pushing image =================="
                 sh '''
-                docker push macnaer/chatterboxserver:latest
+                docker push macnaer/secret-contact-list:latest
                 '''
             }
         }
@@ -41,7 +41,7 @@ pipeline  {
             steps {
                 echo " ============== stoping all images =================="
                 sh '''
-                docker stop chatterboxserver
+                docker stop $(docker ps -a -q)
                 '''
             }
         } 
@@ -49,7 +49,7 @@ pipeline  {
             steps {
                 echo " ============== removing all docker containers =================="
                 sh '''
-                docker rm chatterboxserver
+                docker rm $(docker ps -a -q)
                 '''
             }
         }
@@ -57,7 +57,7 @@ pipeline  {
             steps {
                 echo " ============== starting chatterbox server =================="
                 sh '''
-                docker run -d --restart=always --name chatterboxserver -p 3200:3200 macnaer/chatterboxserver
+                docker run -d --restart=always -p 80:80 -p 443:443 macnaer/secret-contact-list
                 '''
             }
         }
