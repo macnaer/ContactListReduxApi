@@ -15,7 +15,6 @@ pipeline  {
             steps {
                 echo 'Creating docker image ...'
                 dir('.'){
-                    sh "pwd && ls -l"
                     sh "docker build -t macnaer/secret-contact-list ContactList/. "
                 }
             }
@@ -58,7 +57,7 @@ pipeline  {
             steps {
                 echo " ============== starting chatterbox server =================="
                 sh '''
-                docker run -d --restart=always -p 80:80 -p 443:443 macnaer/secret-contact-list
+                docker run -d --restart=always -p 80:80  macnaer/secret-contact-list
                 '''
             }
         }
