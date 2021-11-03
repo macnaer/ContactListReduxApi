@@ -16,7 +16,7 @@ pipeline  {
                 echo 'Creating docker image ...'
                 dir('.'){
                     sh "pwd && ls -l"
-                    sh "docker build -t macnaer/secret-contact-list . "
+                    sh "docker build -t macnaer/secret-contact-list ContactList/. "
                 }
             }
         }
