@@ -15,6 +15,7 @@ pipeline  {
             steps {
                 echo 'Creating docker image ...'
                 dir('.'){
+                    sh "cd ContactList/"
                     sh "docker build -t macnaer/secret-contact-list . "
                 }
             }
